@@ -1,0 +1,27 @@
+config.py
+*ipynb*
+.venv/
+*pycache*
+
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+downloads/
+models/pl_model/script/node_modules/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.idea
+*.pytest_cache
+*.html

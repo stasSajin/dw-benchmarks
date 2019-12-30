@@ -1,0 +1,112 @@
+[[package]]
+category = "main"
+description = "A backport of the dataclasses module for Python 3.6"
+marker = "python_version < \"3.7\""
+name = "dataclasses"
+optional = false
+python-versions = "*"
+version = "0.6"
+
+[[package]]
+category = "main"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+name = "psycopg2-binary"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "2.8.2"
+
+[[package]]
+category = "main"
+description = "Data validation and settings management using python 3.6 type hinting"
+name = "pydantic"
+optional = false
+python-versions = ">=3.6"
+version = "1.3"
+
+[package.dependencies]
+[package.dependencies.dataclasses]
+python = "<3.7"
+version = ">=0.6"
+
+[package.extras]
+email = ["email-validator (>=1.0.3)"]
+typing_extensions = ["typing-extensions (>=3.7.2)"]
+
+[[package]]
+category = "main"
+description = "Database Abstraction Library"
+name = "sqlalchemy"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.3.3"
+
+[package.extras]
+mssql = ["pyodbc"]
+mssql_pymssql = ["pymssql"]
+mssql_pyodbc = ["pyodbc"]
+mysql = ["mysqlclient"]
+oracle = ["cx-oracle"]
+postgresql = ["psycopg2"]
+postgresql_pg8000 = ["pg8000"]
+postgresql_psycopg2binary = ["psycopg2-binary"]
+postgresql_psycopg2cffi = ["psycopg2cffi"]
+pymysql = ["pymysql"]
+
+[metadata]
+content-hash = "bb2cf0651460d45747260102066f8d20142db2e34154c2f3751101218c36714b"
+python-versions = "^3.6"
+
+[metadata.files]
+dataclasses = [
+    {file = "dataclasses-0.6-py3-none-any.whl", hash = "sha256:454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f"},
+    {file = "dataclasses-0.6.tar.gz", hash = "sha256:6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84"},
+]
+psycopg2-binary = [
+    {file = "psycopg2-binary-2.8.2.tar.gz", hash = "sha256:4c2d9369ed40b4a44a8ccd6bc3a7db6272b8314812d2d1091f95c4c836d92e06"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:e45f93ff3f7dae2202248cf413a87aeb330821bf76998b3cf374eda2fc893dd7"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:da0929b2bf0d1f365345e5eb940d8713c1d516312e010135b14402e2a3d2404d"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:7a2b5b095f3bd733aab101c89c0e1a3f0dfb4ebdc26f6374805c086ffe29d5b2"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27m-win32.whl", hash = "sha256:b2cf82f55a619879f8557fdaae5cec7a294fac815e0087c4f67026fdf5259844"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27m-win_amd64.whl", hash = "sha256:ac8c5e20309f4989c296d62cac20ee456b69c41fd1bc03829e27de23b6fa9dd0"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:c1c9a33e46d7c12b9c96cf2d4349d783e3127163fd96254dcd44663cf0a1d438"},
+    {file = "psycopg2_binary-2.8.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:8520c03172da18345d012949a53617a963e0191ccb3c666f23276d5326af27b5"},
+    {file = "psycopg2_binary-2.8.2-cp34-cp34m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:fcbe7cf3a786572b73d2cd5f34ed452a5f5fac47c9c9d1e0642c457a148f9f88"},
+    {file = "psycopg2_binary-2.8.2-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:a582416ad123291a82c300d1d872bdc4136d69ad0b41d57dc5ca3df7ef8e3088"},
+    {file = "psycopg2_binary-2.8.2-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:2eddc31500f73544a2a54123d4c4b249c3c711d31e64deddb0890982ea37397a"},
+    {file = "psycopg2_binary-2.8.2-cp34-cp34m-win32.whl", hash = "sha256:0a1232cdd314e08848825edda06600455ad2a7adaa463ebfb12ece2d09f3370e"},
+    {file = "psycopg2_binary-2.8.2-cp34-cp34m-win_amd64.whl", hash = "sha256:2de34cc3b775724623f86617d2601308083176a495f5b2efc2bbb0da154f483a"},
+    {file = "psycopg2_binary-2.8.2-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:90da901fc33ea393fc644607e4a3916b509387e9339ec6ebc7bfded45b7a0ae9"},
+    {file = "psycopg2_binary-2.8.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:be0f952f1c365061041bad16e27e224e29615d4eb1fb5b7e7760a1d3d12b90b6"},
+    {file = "psycopg2_binary-2.8.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:b59d6f8cfca2983d8fdbe457bf95d2192f7b7efdb2b483bf5fa4e8981b04e8b2"},
+    {file = "psycopg2_binary-2.8.2-cp35-cp35m-win32.whl", hash = "sha256:de24a4962e361c512d3e528ded6c7480eab24c655b8ca1f0b761d3b3650d2f07"},
+    {file = "psycopg2_binary-2.8.2-cp35-cp35m-win_amd64.whl", hash = "sha256:d18c89957ac57dd2a2724ecfe9a759912d776f96ecabba23acb9ecbf5c731035"},
+    {file = "psycopg2_binary-2.8.2-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:f1dc2b7b2748084b890f5d05b65a47cd03188824890e9a60818721fd492249fb"},
+    {file = "psycopg2_binary-2.8.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:be08168197021d669b9964bd87628fa88f910b1be31e7010901070f2540c05fd"},
+    {file = "psycopg2_binary-2.8.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:d7e7b0ff21f39433c50397e60bf0995d078802c591ca3b8d99857ea18a7496ee"},
+    {file = "psycopg2_binary-2.8.2-cp36-cp36m-win32.whl", hash = "sha256:804914a669186e2843c1f7fbe12b55aad1b36d40a28274abe6027deffad9433d"},
+    {file = "psycopg2_binary-2.8.2-cp36-cp36m-win_amd64.whl", hash = "sha256:131c80d0958c89273d9720b9adf9df1d7600bb3120e16019a7389ab15b079af5"},
+    {file = "psycopg2_binary-2.8.2-cp37-cp37m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:03c49e02adf0b4d68f422fdbd98f7a7c547beb27e99a75ed02298f85cb48406a"},
+    {file = "psycopg2_binary-2.8.2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:484f6c62bdc166ee0e5be3aa831120423bf399786d1f3b0304526c86180fbc0b"},
+    {file = "psycopg2_binary-2.8.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:007ca0df127b1862fc010125bc4100b7a630efc6841047bd11afceadb4754611"},
+    {file = "psycopg2_binary-2.8.2-cp37-cp37m-win32.whl", hash = "sha256:f046aeae1f7a845041b8661bb7a52449202b6c5d3fb59eb4724e7ca088811904"},
+    {file = "psycopg2_binary-2.8.2-cp37-cp37m-win_amd64.whl", hash = "sha256:70f570b5fa44413b9f30dbc053d17ef3ce6a4100147a10822f8662e58d473656"},
+]
+pydantic = [
+    {file = "pydantic-1.3-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:dd9359db7644317898816f6142f378aa48848dcc5cf14a481236235fde11a148"},
+    {file = "pydantic-1.3-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:cbe284bd5ad67333d49ecc0dc27fa52c25b4c2fe72802a5c060b5f922db58bef"},
+    {file = "pydantic-1.3-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:2b32a5f14558c36e39aeefda0c550bfc0f47fc32b4ce16d80dc4df2b33838ed8"},
+    {file = "pydantic-1.3-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:59235324dd7dc5363a654cd14271ea8631f1a43de5d4fc29c782318fcc498002"},
+    {file = "pydantic-1.3-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:176885123dfdd8f7ab6e7ba1b66d4197de75ba830bb44d921af88b3d977b8aa5"},
+    {file = "pydantic-1.3-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d4bb6a75abc2f04f6993124f1ed4221724c9dc3bd9df5cb54132e0b68775d375"},
+    {file = "pydantic-1.3-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:8a8e089aec18c26561e09ee6daf15a3cc06df05bdc67de60a8684535ef54562f"},
+    {file = "pydantic-1.3-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:479ca8dc7cc41418751bf10302ee0a1b1f8eedb2de6c4f4c0f3cf8372b204f9a"},
+    {file = "pydantic-1.3-cp38-cp38-manylinux1_i686.whl", hash = "sha256:87673d1de790c8d5282153cab0b09271be77c49aabcedf3ac5ab1a1fd4dcbac0"},
+    {file = "pydantic-1.3-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:dacb79144bb3fdb57cf9435e1bd16c35586bc44256215cfaa33bf21565d926ae"},
+    {file = "pydantic-1.3-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:c0da48978382c83f9488c6bbe4350e065ea5c83e85ca5cfb8fa14ac11de3c296"},
+    {file = "pydantic-1.3-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:b60f2b3b0e0dd74f1800a57d1bbd597839d16faf267e45fa4a5407b15d311085"},
+    {file = "pydantic-1.3-py36.py37.py38-none-any.whl", hash = "sha256:d03df07b7611004140b0fef91548878c2b5f48c520a8cb76d11d20e9887a495e"},
+    {file = "pydantic-1.3.tar.gz", hash = "sha256:2eab7d548b0e530bf65bee7855ad8164c2f6a889975d5e9c4eefd1e7c98245dc"},
+]
+sqlalchemy = [
+    {file = "SQLAlchemy-1.3.3.tar.gz", hash = "sha256:91c54ca8345008fceaec987e10924bf07dcab36c442925357e5a467b36a38319"},
+]
